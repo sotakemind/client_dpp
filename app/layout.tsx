@@ -1,4 +1,4 @@
-
+'use client'
 import '@/assets/styles/globals.scss'
 import { getSiteUrl } from '@/config/url.config'
 import { SITE_NAME } from '@/constants/seo.constants'
@@ -9,7 +9,7 @@ import { Metadata } from 'next'
 import type { PropsWithChildren } from 'react'
 
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
     icons: {
         icon: '/favicon.svg'
     },
