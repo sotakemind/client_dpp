@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(225, 225, 225);
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  opacity: 0.2 !important;
+}
+
+.open-menu {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.close-menu {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.btn {
+  @apply rounded-xl px-10 py-2 font-medium shadow transition duration-300 ease-in-out;
+
+  &:not(&:disabled) {
+    @apply hover:shadow-lg;
+  }
+
+  &.btn-white {
+    @apply bg-white text-primary;
+  }
+
+  &.btn-blue {
+    @apply bg-primary text-white;
+  }
+
+  &.btn-large {
+    @apply px-12 py-4 text-xl;
+  }
+}
