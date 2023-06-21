@@ -1,4 +1,3 @@
-'use client'
 
 import '@/assets/styles/globals.scss'
 import { getSiteUrl } from '@/config/url.config'
